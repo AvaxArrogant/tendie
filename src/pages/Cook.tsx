@@ -52,7 +52,7 @@ export function Cook() {
           </h1>
           <p className="text-gray-600 max-w-2xl mx-auto">
             Transform your Raw Tendies into delicious, golden cooked Tendies! 
-            Each Raw Tendy burns to create one perfectly cooked Tendy.
+            Each Raw Tendies burns to create one perfectly cooked Tendies.
           </p>
         </div>
 

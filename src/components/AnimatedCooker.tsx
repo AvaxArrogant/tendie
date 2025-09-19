@@ -71,7 +71,7 @@ export function AnimatedCooker({ onCook, rawTendyBalance, isLoading }: AnimatedC
                   className="bg-gradient-to-r from-orange-400 to-yellow-500 h-4 rounded-full"
                 />
               </div>
-              <p className="text-sm text-gray-600">Cooking your tendies... {cookingProgress}%</p>
+              <p className="text-sm text-gray-600">Cooking your Tendies... {cookingProgress}%</p>
               
               {/* Sizzling animation */}
               <div className="flex justify-center mt-2 space-x-1">
