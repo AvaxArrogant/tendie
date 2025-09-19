@@ -38,24 +38,24 @@ export function Leaderboard() {
   const getRankIcon = (rank: number) => {
     switch (rank) {
       case 1:
-        return <Trophy className="text-yellow-500" size={24} />
+        return <Trophy className="text-avalanche-400" size={24} />
       case 2:
         return <Medal className="text-gray-400" size={24} />
       case 3:
-        return <Award className="text-amber-600" size={24} />
+        return <Award className="text-avalanche-300" size={24} />
       default:
-        return <Flame className="text-orange-500" size={20} />
+        return <Flame className="text-avalanche-500" size={20} />
     }
   }
 
   const getRankStyle = (rank: number) => {
     switch (rank) {
       case 1:
-        return 'bg-gradient-to-r from-red-400 to-red-600 text-white'
+        return 'bg-avalanche-gradient text-white'
       case 2:
         return 'bg-gradient-to-r from-gray-300 to-gray-500 text-white'
       case 3:
-        return 'bg-gradient-to-r from-red-300 to-red-500 text-white'
+        return 'bg-gradient-to-r from-avalanche-300 to-avalanche-500 text-white'
       default:
         return 'bg-white border border-gray-200'
     }
@@ -63,7 +63,7 @@ export function Leaderboard() {
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-red-50 to-red-100 flex items-center justify-center">
+      <div className="min-h-screen bg-avalanche-light flex items-center justify-center">
         <div className="text-center">
           <div className="animate-spin text-6xl mb-4">🍗</div>
           <p className="text-gray-600">Loading Hall of Fryers...</p>
@@ -73,7 +73,7 @@ export function Leaderboard() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-red-50 to-red-100">
+    <div className="min-h-screen bg-avalanche-light">
       <div className="container mx-auto px-4 py-8">
         <div className="text-center mb-8">
           <h1 className="text-4xl font-bold mb-4 bg-gradient-to-r from-red-500 to-red-600 bg-clip-text text-transparent">

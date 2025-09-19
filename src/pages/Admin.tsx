@@ -14,9 +14,9 @@ export function Admin() {
 
   if (!isAdmin) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-orange-50 to-yellow-50 flex items-center justify-center">
+      <div className="min-h-screen bg-avalanche-light flex items-center justify-center">
         <Card className="p-8 text-center">
-          <AlertTriangle className="text-red-500 mx-auto mb-4" size={48} />
+          <AlertTriangle className="text-avalanche-500 mx-auto mb-4" size={48} />
           <h1 className="text-2xl font-bold mb-2">Access Denied</h1>
           <p className="text-gray-600">You don't have permission to access the admin panel.</p>
         </Card>
@@ -37,17 +37,17 @@ export function Admin() {
 
   const stats = [
     { label: 'Total Tendies Cooked', value: '1,234,567', icon: BarChart3, color: 'text-green-500' },
-    { label: 'Total Raw Tendies Burned', value: '987,654', icon: BarChart3, color: 'text-red-500' },
+    { label: 'Total Raw Tendies Burned', value: '987,654', icon: BarChart3, color: 'text-avalanche-500' },
     { label: 'Active Users (24h)', value: '2,345', icon: Users, color: 'text-blue-500' },
     { label: 'Total Transactions', value: '45,678', icon: BarChart3, color: 'text-purple-500' },
   ]
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-orange-50 to-yellow-50">
+        <div className="min-h-screen bg-avalanche-light">
       <div className="container mx-auto px-4 py-8">
         <div className="text-center mb-8">
-          <h1 className="text-4xl font-bold mb-4 bg-gradient-to-r from-orange-500 to-yellow-500 bg-clip-text text-transparent">
-            🛠️ Admin Control Panel
+          <h1 className="text-4xl font-bold mb-4 bg-avalanche-gradient bg-clip-text text-transparent">
+            ⚙️ Admin Dashboard
           </h1>
           <p className="text-gray-600">
             Manage your Tendies ecosystem with powerful administrative tools.
@@ -126,7 +126,7 @@ export function Admin() {
                 value={newAdminAddress}
                 onChange={(e) => setNewAdminAddress(e.target.value)}
                 placeholder="0x..."
-                className="flex-1 p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500"
+                className="flex-1 p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-avalanche-500 focus:border-avalanche-500"
               />
               <Button onClick={handleAddAdmin} disabled={!newAdminAddress}>
                 <Plus size={16} className="mr-1" />
@@ -148,7 +148,7 @@ export function Admin() {
                   className="flex items-center justify-between p-4 bg-gray-50 rounded-lg"
                 >
                   <div className="flex items-center space-x-3">
-                    <div className="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center text-white text-sm font-semibold">
+                    <div className="w-8 h-8 bg-avalanche-500 rounded-full flex items-center justify-center text-white text-sm font-semibold">
                       {index + 1}
                     </div>
                     <code className="bg-white px-2 py-1 rounded text-sm">{address}</code>
@@ -185,7 +185,7 @@ export function Admin() {
                   <input
                     type="text"
                     defaultValue="0x..."
-                    className="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-orange-500 focus:border-orange-500 text-sm"
+                    className="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-avalanche-500 focus:border-avalanche-500 text-sm"
                   />
                 </div>
                 <div>
@@ -195,7 +195,7 @@ export function Admin() {
                   <input
                     type="text"
                     defaultValue="0x..."
-                    className="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-orange-500 focus:border-orange-500 text-sm"
+                    className="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-avalanche-500 focus:border-avalanche-500 text-sm"
                   />
                 </div>
               </div>
@@ -211,7 +211,7 @@ export function Admin() {
                   <input
                     type="text"
                     defaultValue="0x..."
-                    className="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-orange-500 focus:border-orange-500 text-sm"
+                    className="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-avalanche-500 focus:border-avalanche-500 text-sm"
                   />
                 </div>
                 <div>
@@ -221,7 +221,7 @@ export function Admin() {
                   <input
                     type="text"
                     defaultValue="0x..."
-                    className="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-orange-500 focus:border-orange-500 text-sm"
+                    className="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-avalanche-500 focus:border-avalanche-500 text-sm"
                   />
                 </div>
               </div>

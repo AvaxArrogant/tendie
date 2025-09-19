@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Button } from './ui/Button'
 import { Modal } from './ui/Modal'
@@ -39,7 +39,7 @@ export function AnimatedCooker({ onCook, rawTendyBalance, isLoading }: AnimatedC
         setShowSuccess(true)
         setCookAmount('')
       }, 3000)
-    } catch (error) {
+    } catch {
       setIsCooking(false)
       clearInterval(progressInterval)
     }
@@ -68,7 +68,7 @@ export function AnimatedCooker({ onCook, rawTendyBalance, isLoading }: AnimatedC
                 <motion.div
                   initial={{ width: 0 }}
                   animate={{ width: `${cookingProgress}%` }}
-                  className="bg-gradient-to-r from-orange-400 to-yellow-500 h-4 rounded-full"
+                  className="bg-avalanche-gradient h-4 rounded-full"
                 />
               </div>
               <p className="text-sm text-gray-600">Cooking your Tendies... {cookingProgress}%</p>
@@ -108,12 +108,12 @@ export function AnimatedCooker({ onCook, rawTendyBalance, isLoading }: AnimatedC
                 value={cookAmount}
                 onChange={(e) => setCookAmount(e.target.value)}
                 placeholder="Enter amount..."
-                className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500"
+                className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-avalanche-500 focus:border-avalanche-500"
                 max={rawTendyBalance}
               />
               <button
                 onClick={() => setCookAmount(rawTendyBalance)}
-                className="absolute right-2 top-1/2 transform -translate-y-1/2 text-sm text-orange-600 hover:text-orange-700"
+                className="absolute right-2 top-1/2 transform -translate-y-1/2 text-sm text-avalanche-600 hover:text-avalanche-700"
               >
                 MAX
               </button>
@@ -139,7 +139,7 @@ export function AnimatedCooker({ onCook, rawTendyBalance, isLoading }: AnimatedC
         <div className="text-center">
           <div className="text-6xl mb-4">🍗</div>
           <p className="text-lg mb-4">
-            Successfully cooked <span className="font-bold text-orange-600">{cookAmount}</span> Tendies!
+            Successfully cooked <span className="font-bold text-avalanche-600">{cookAmount}</span> Tendies!
           </p>
           <Button onClick={() => setShowSuccess(false)} className="w-full">
             Delicious! 🤤

@@ -1,4 +1,3 @@
-import { Button } from './ui/Button'
 import { useNetwork } from '../hooks/useNetwork'
 import { Wifi, WifiOff } from 'lucide-react'
 

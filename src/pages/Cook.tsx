@@ -16,7 +16,7 @@ export function Cook() {
 
   const contracts = isTestnet ? CONTRACT_ADDRESSES.TESTNET : CONTRACT_ADDRESSES.MAINNET
 
-  const { writeContract, isPending, error } = useWriteContract()
+  const { writeContract, isPending } = useWriteContract()
   
   const { isLoading: isConfirming } = useWaitForTransactionReceipt({
     hash: lastTxHash as `0x${string}`,
@@ -44,10 +44,10 @@ export function Cook() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-orange-50 to-yellow-50">
+    <div className="min-h-screen bg-avalanche-light">
       <div className="container mx-auto px-4 py-8">
         <div className="text-center mb-8">
-          <h1 className="text-4xl font-bold mb-4 bg-gradient-to-r from-orange-500 to-yellow-500 bg-clip-text text-transparent">
+          <h1 className="text-4xl font-bold mb-4 bg-avalanche-gradient bg-clip-text text-transparent">
             🔥 Cook Your Tendies
           </h1>
           <p className="text-gray-600 max-w-2xl mx-auto">
@@ -76,21 +76,21 @@ export function Cook() {
           <h2 className="text-2xl font-semibold mb-4 text-center">How to Cook 📖</h2>
           <div className="space-y-4">
             <div className="flex items-start space-x-3">
-              <span className="bg-orange-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-semibold">1</span>
+              <span className="bg-avalanche-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-semibold">1</span>
               <div>
                 <h3 className="font-semibold">Enter Amount</h3>
                 <p className="text-gray-600">Choose how many Raw Tendies you want to cook</p>
               </div>
             </div>
             <div className="flex items-start space-x-3">
-              <span className="bg-orange-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-semibold">2</span>
+              <span className="bg-avalanche-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-semibold">2</span>
               <div>
                 <h3 className="font-semibold">Start Cooking</h3>
                 <p className="text-gray-600">Click the cook button and confirm the transaction</p>
               </div>
             </div>
             <div className="flex items-start space-x-3">
-              <span className="bg-orange-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-semibold">3</span>
+              <span className="bg-avalanche-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-semibold">3</span>
               <div>
                 <h3 className="font-semibold">Enjoy Your Tendies!</h3>
                 <p className="text-gray-600">Watch the cooking animation and receive your cooked Tendies</p>

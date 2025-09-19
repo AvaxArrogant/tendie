@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { Card } from '../components/ui/Card'
 import { TokenBalanceCard } from '../components/TokenBalanceCard'
@@ -29,7 +29,7 @@ export function Home() {
   ]
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-orange-50 to-yellow-50">
+    <div className="min-h-screen bg-avalanche-light">
       {/* Easter Egg Animation */}
       {showEasterEgg && (
         <div className="fixed inset-0 pointer-events-none z-50 overflow-hidden">
@@ -58,7 +58,7 @@ export function Home() {
           >
             🍗
           </motion.div>
-          <h1 className="text-6xl font-bold mb-4 bg-gradient-to-r from-orange-500 to-yellow-500 bg-clip-text text-transparent">
+          <h1 className="text-6xl font-bold mb-4 bg-avalanche-gradient bg-clip-text text-transparent">
             Welcome to Tendies
           </h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-8">
@@ -72,7 +72,7 @@ export function Home() {
               href="/cook"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="bg-gradient-to-r from-orange-500 to-yellow-500 text-white px-8 py-3 rounded-lg font-semibold text-lg shadow-lg hover:shadow-xl transition-all"
+              className="bg-avalanche-gradient text-white px-8 py-3 rounded-lg font-semibold text-lg shadow-lg hover:shadow-xl transition-all"
             >
               🔥 Start Cooking
             </motion.a>

@@ -26,7 +26,7 @@ export function TokenBalanceCard({ token, balance, isLoading }: TokenBalanceCard
             <motion.span
               initial={{ scale: 0.8 }}
               animate={{ scale: 1 }}
-              className={isRaw ? 'text-red-600' : 'text-orange-500'}
+              className={isRaw ? 'text-avalanche-600' : 'text-avalanche-500'}
             >
               {parseFloat(balance).toLocaleString()}
             </motion.span>

@@ -97,7 +97,7 @@ export function News() {
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-orange-50 to-yellow-50 flex items-center justify-center">
+      <div className="min-h-screen bg-avalanche-light flex items-center justify-center">
         <div className="text-center">
           <div className="animate-spin text-6xl mb-4">📰</div>
           <p className="text-gray-600">Loading latest news...</p>
@@ -107,10 +107,10 @@ export function News() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-orange-50 to-yellow-50">
+    <div className="min-h-screen bg-avalanche-light">
       <div className="container mx-auto px-4 py-8">
         <div className="text-center mb-8">
-          <h1 className="text-4xl font-bold mb-4 bg-gradient-to-r from-orange-500 to-yellow-500 bg-clip-text text-transparent">
+          <h1 className="text-4xl font-bold mb-4 bg-avalanche-gradient bg-clip-text text-transparent">
             📰 Tendies News & Updates
           </h1>
           <p className="text-gray-600 max-w-2xl mx-auto">
@@ -127,7 +127,7 @@ export function News() {
                 onClick={() => setFilter(category)}
                 className={`px-4 py-2 rounded-md text-sm font-medium transition-all ${
                   filter === category
-                    ? 'bg-orange-500 text-white shadow-sm'
+                    ? 'bg-avalanche-500 text-white shadow-sm'
                     : 'text-gray-600 hover:text-gray-900 hover:bg-gray-50'
                 }`}
               >
@@ -166,7 +166,7 @@ export function News() {
                         <User size={14} className="mr-1" />
                         {item.author}
                       </div>
-                      <button className="text-orange-500 hover:text-orange-600 text-sm font-medium flex items-center">
+                      <button className="text-avalanche-500 hover:text-avalanche-600 text-sm font-medium flex items-center">
                         Read More <ExternalLink size={14} className="ml-1" />
                       </button>
                     </div>
@@ -214,7 +214,7 @@ export function News() {
                       <User size={14} className="mr-1" />
                       {item.author}
                     </div>
-                    <button className="text-orange-500 hover:text-orange-600 text-sm font-medium flex items-center">
+                    <button className="text-avalanche-500 hover:text-avalanche-600 text-sm font-medium flex items-center">
                       Read Full Article <ExternalLink size={14} className="ml-1" />
                     </button>
                   </div>
@@ -234,9 +234,9 @@ export function News() {
             <input
               type="email"
               placeholder="Enter your email address"
-              className="flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500"
+              className="flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-avalanche-500 focus:border-avalanche-500"
             />
-            <button className="bg-gradient-to-r from-orange-500 to-yellow-500 text-white px-6 py-2 rounded-lg font-medium hover:shadow-lg transition-all">
+            <button className="bg-avalanche-gradient text-white px-6 py-2 rounded-lg font-medium hover:shadow-lg transition-all">
               Subscribe
             </button>
           </div>
